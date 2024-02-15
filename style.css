@@ -26,6 +26,9 @@
   --white: #FCFCFC;
   --navbar-height: 64px;
   --background-item: #000000;
+  --bgX: #171717;
+  --text-colorX: #fff;
+  --accentX: cyan;
 }
 
 body {
@@ -36,7 +39,7 @@ body {
 }
 
 html {
-  height: 100%;
+  min-height: 800px;
 }
 
 * {
@@ -53,9 +56,10 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  min-height: 860px;
+  min-height: 200px; /* Geçici olarak küçük bir değer */
   height: 100%;
   border-radius: 16px;
+  border-top-left-radius: 0;
   background-color: var(--primary-color);
   width: 18rem;
   padding: 16px 10px;
@@ -64,7 +68,9 @@ html {
   flex-direction: column;
   background-color: #FCFCFD;
   transition: all 0.1s ease-in-out;
+  overflow-y: auto; /* Dikey scrollbar ekle */
 }
+
 body.collapsed .navdiv nav {
   width: 76px;
 }
@@ -147,7 +153,7 @@ body.collapsed .sidebar-top {
 }
 
 .sidebar-links li svg {
-  stroke: var(--primary-color);
+  stroke: vart(--background);
   transition: none;
   width: 28px;
   height: 28px;
@@ -195,14 +201,7 @@ body.collapsed .sidebar-top {
   stroke: var(--background);
 }
 
-.sidebar-links li a:hover {
-  background-color: var(--item-hover);
-  color: var(--primary-color);
-}
 
-.sidebar-links li a:hover svg {
-  stroke: var(--primary-color);
-}
 
 /*? bottom sidebar */
 .sidebar-bottom {
@@ -406,13 +405,62 @@ li:last-child > .line-vertical {
   min-width: 12px;
 }
 /******************************************************************************************/
-.rightdiv{
+.right{
   float: right;
   width: calc(100% - 20rem);
-  height: 500px;
-  /* İçeriği ortalamak için flexbox kullanıyoruz */
+  min-height: 610px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100%; /* Sayfanın tamamını kaplamasını sağlar */
+  flex-direction: column;
+}
+
+.right iframe{
+  width: 100%;
+  height: 610px;
+  border-radius: 12px;
+  border: 5px solid white;
+}
+
+/*******************************************************************************************/
+.downloadDiv{
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+}
+.downloadDiv .button {
+  display: inline-block;
+  max-width: 20rem;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+}
+
+.downloadDiv .shape {
+  fill: transparent;
+  stroke: var(--accentX);
+  stroke-dasharray: 120 500;
+  stroke-dashoffset: -454;
+  stroke-width: 8px;
+  transition:
+      stroke-width 0.9s,
+      stroke-dashoffset 0.9s,
+      stroke-dasharray 0.9s;
+}
+
+.downloadDiv .text {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.3rem;
+  color: var(--text-colorX);
+  top: -3rem;
+  position: relative;
+  pointer-events: none;
+}
+
+.downloadDiv .shape:hover {
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
 }
