@@ -1,4 +1,4 @@
-
+let downloadXpath;
 const expand_btn = document.querySelector(".expand-btn");
 const img = expand_btn.querySelector("heade img");
 expand_btn.addEventListener("click", () => {
@@ -35,5 +35,5 @@ mainItems.forEach((mainItem) => {
   })
 });
 document.getElementById("downloadLink").addEventListener("click", function() {
-  
+    this.href=downloadXpath;
 });
