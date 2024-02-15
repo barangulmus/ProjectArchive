@@ -7,7 +7,7 @@ expand_btn.addEventListener("click", () => {
 
 const current = window.location.href;
 
-const allLinks = document.querySelectorAll(".sidebar-links a");
+const allLinks = document.querySelectorAll(".sidebar-links tooltip");
 
 allLinks.forEach((elem) => {
   elem.addEventListener('click', function() {
@@ -34,4 +34,6 @@ mainItems.forEach((mainItem) => {
     );
   })
 });
-iframe = document.getElementById("iframeId").src = "blog-preview-01/index.html";
+document.getElementById("downloadLink").addEventListener("click", function() {
+  
+});
