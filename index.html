@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -390,10 +391,53 @@
   </div>
   <!--******************************************-->
   <div class="positionMiddleDiv">
-      <div class="positionMiddleDiv_header">
-        <h1 style="font-size: 1.2rem; padding: 15px 0 0 10px; color: white;">Paylaşmak istediğiniz dosyayı sürükleyiniz</h1>
-        <button type="button" id="closeforms">X</button>
+    <div class="positionMiddleDiv_header">
+      <h1 style="font-size: 1.2rem; padding: 15px 0 0 10px; color: white;">Dosya Yükleme Ekranı
+      </h1>
+      <button type="button" id="closeforms">X</button>
+      <div class="dropzone-sol">
+        <form class="dropzone-box">
+          <h2>Upload and attach files</h2>
+          <p>
+            Attach files to this project
+          </p>
+          <div class="dropzone-area">
+            <div class="file-upload-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+              </svg>
+            </div>
+            <p>Click to upload or drag and drop</p>
+            <input type="file" required id="upload-file" name="uploaded-file" webkitdirectory>
+            <p class="message">No Files Selected</p>
+          </div>
+        </form>
       </div>
+      <div class="dropzone-sag">
+        <form class="dropzone-box">
+          <h2>Upload and attach files</h2>
+          <p>
+            Attach files to this project
+          </p>
+          <div class="dropzone-area">
+            <div class="file-upload-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+              </svg>
+            </div>
+            <p>Click to upload or drag and drop</p>
+            <input type="file" required id="upload-file" name="uploaded-file">
+            <p class="message">No Files Selected</p>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
