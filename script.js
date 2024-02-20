@@ -38,7 +38,21 @@ document.getElementById("downloadLink").addEventListener("click", function() {
     this.href=downloadXpath;
 });
 /*////////////////////////////////////////////////////////////////////////////////*/
-
+document.getElementById("closeforms").addEventListener("click",function() {
+  document.getElementById("positionMiddleDiv").style="opacity: 0; pointer-events: none;";
+});
+document.getElementById("addwebpage").addEventListener("click",function() {
+  document.getElementById("positionMiddleDiv").style="opacity: 90%; pointer-events: all;";
+  //BU KISMA DİKKAT
+  //BU KISMA DİKKAT
+  //BU KISMA DİKKAT
+  //BU KISMA DİKKAT
+  //BU KISMA DİKKAT
+  //BU KISMA DİKKAT
+  //BU KISMA DİKKAT
+  document.getElementById("positionMiddleDiv").classList.add("animate__animated animate__bounceIn");
+});
+/*////////////////////////////////////////////////////////////////////////////////*/
 const inputFiles = document.querySelectorAll(
   ".dropzone-area input[type='file']"
 );
@@ -78,7 +92,6 @@ dropZoneElement.addEventListener("drop", (e) => {
 
 const updateDropzoneFileList = (dropzoneElement, file) => {
   let dropzoneFileMessage = dropzoneElement.querySelector(".message");
-
   dropzoneFileMessage.innerHTML = `
         ${file.name}, ${file.size} bytes
     `;
@@ -95,3 +108,6 @@ dropzoneBox.addEventListener("submit", (e) => {
   const myFiled = document.getElementById("upload-file");
   console.log(myFiled.files[0]);
 });
+
+/*////////////////////////////////////////////////////////////////////////////////*/
+
