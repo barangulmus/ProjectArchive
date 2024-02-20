@@ -110,4 +110,4 @@ dropzoneBox.addEventListener("submit", (e) => {
 });
 
 /*////////////////////////////////////////////////////////////////////////////////*/
-
+//Not: https://www.youtube.com/watch?v=xM9b1bO36KY
