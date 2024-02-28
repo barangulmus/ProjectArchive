@@ -37,6 +37,24 @@ mainItems.forEach((mainItem) => {
 document.getElementById("downloadLink").addEventListener("click", function() {
     this.href=downloadXpath;
 });
+
+
+/*////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////*/
+document.getElementById("closeforms").addEventListener("click", function() {
+  document.getElementById("positionMiddleDiv").style.opacity = "0";
+  document.getElementById("positionMiddleDiv").style.pointerEvents = "none";
+});
+/*////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////*/
+document.getElementById("addFileCard").addEventListener("click", function() {
+  document.getElementById("positionMiddleDiv").style.opacity = "90%";
+  document.getElementById("positionMiddleDiv").style.pointerEvents = "all";
+  document.getElementById("positionMiddleDiv").classList.add("animate__animated","animate__bounceIn");
+});
+/*////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////////////*/
 
 // Dosya yükleme alanındaki input elementlerini seçer
@@ -122,3 +140,4 @@ document.querySelector('.dropzone-box').addEventListener("submit", (e) => {
     console.error(error);
   });
 });
+
