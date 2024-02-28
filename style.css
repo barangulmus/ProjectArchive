@@ -465,16 +465,16 @@ li:last-child > .line-vertical {
   stroke-dasharray: 760;
 }
 /*********************************************************************************/
-#positionMiddleDiv{
+.positionMiddleDiv{
   width: 70%;
   height: 600px;
   margin-left: 12.5%;
-  margin-top: 10vh;
+  margin-top: 20vh;
   z-index: 5;
   position: absolute;
   background-color: #0C2D57;
-  opacity: 0;
-  pointer-events: none;
+  opacity: 90%;
+  pointer-events: all;
   border: 2px solid black;
   border-radius: 6px;
 }
@@ -494,12 +494,12 @@ li:last-child > .line-vertical {
   margin-right: 10px;
 }
 /**************************************************************************************/
-.dropzone-middlee{
-  width: 70%;
+.dropzone-sol{
+  width: 80%;
+  margin-left: 10%;
   float: left;
   padding: 30px;
   padding-top: 40px;
-  margin-left: 15%;
 }
 
 
