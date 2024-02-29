@@ -43,15 +43,20 @@ document.getElementById("downloadLink").addEventListener("click", function() {
 /*////////////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////////////*/
 document.getElementById("closeforms").addEventListener("click", function() {
-  document.getElementById("positionMiddleDiv").style.opacity = "0";
-  document.getElementById("positionMiddleDiv").style.pointerEvents = "none";
+  // document.getElementById("positionMiddleDiv").style.opacity = "0";
+  // document.getElementById("positionMiddleDiv").style.pointerEvents = "none";
+  document.getElementById("positionMiddleDiv").style = "opacity: 0; pointer-events:none;";
 });
 /*////////////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////////////*/
 document.getElementById("addFileCard").addEventListener("click", function() {
-  document.getElementById("positionMiddleDiv").style.opacity = "90%";
-  document.getElementById("positionMiddleDiv").style.pointerEvents = "all";
-  document.getElementById("positionMiddleDiv").classList.add("animate__animated","animate__bounceIn");
+  // document.getElementById("positionMiddleDiv").classList.add("animate__animated animate__bounceIn");
+  document.getElementById("positionMiddleDiv").style = "opacity: 90%; pointer-events:all;";
+});
+/*////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////*/
+document.getElementById("channeluploadButton").addEventListener("click", function() {
+  document.getElementById("positionMiddleDiv").style = "opacity: 0; pointer-events:none;";
 });
 /*////////////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////////////*/
