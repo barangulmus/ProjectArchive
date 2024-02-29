@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body style="background-color: #333;">
@@ -359,7 +360,7 @@
       <div class="sidebar-bottom hide">
         <img src="assets/diamond.png" alt="Diamond">
         <p>
-          Welcome to Laplace Diamond club!
+          Click to add your project
         </p>
         <button id="addFileCard">
           Explore Benefits
@@ -394,7 +395,7 @@
     <div class="positionMiddleDiv_header">
       <h1 style="font-size: 1.2rem; padding: 15px 0 0 10px; color: white;">Dosya Yükleme Ekranı
       </h1>
-      <button type="button" id="closeforms">X</button>
+      <button type="button" id="closeforms"><span class="material-symbols-outlined">close</span></button>
       <div class="dropzone-sol">
         <form class="dropzone-box" action="upload.php" method="post" enctype="multipart/form-data">
           <h2>Upload and attach files</h2>
@@ -415,7 +416,7 @@
             <p class="message">No Files Selected</p>
           </div>
           <div class="dropzone-actions">
-            <button type="reset">
+            <button type="reset" id="channeluploadButton">
                 Cancel
             </button>
             <button id="submit-button" type="submit">
