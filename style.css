@@ -473,8 +473,8 @@ li:last-child > .line-vertical {
   z-index: 5;
   position: absolute;
   background-color: #0C2D57;
-  opacity: 90%;
-  pointer-events: all;
+  opacity: 0;
+  pointer-events: none;
   border: 2px solid black;
   border-radius: 6px;
 }
@@ -484,10 +484,9 @@ li:last-child > .line-vertical {
   border-bottom: 4px solid white;
 }
 #closeforms{
-  background-color: #FC6736;
-  padding: 12px;
+  padding: 7px;
   border-radius: 50%;
-  color: white;
+  color: black;
   border: 2px solid #FFB0B0;
   float: right;
   margin-top: -34px;
