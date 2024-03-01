@@ -397,7 +397,7 @@
       </h1>
       <button type="button" id="closeforms"><span class="material-symbols-outlined">close</span></button>
       <div class="dropzone-sol">
-        <form class="dropzone-box" action="upload.php" method="post" enctype="multipart/form-data">
+        <form name="yukleme" class="dropzone-box" action="upload.php" method="post" enctype="multipart/form-data">
           <h2>Upload and attach files</h2>
           <p>
             Attach files to this project
@@ -412,7 +412,7 @@
               </svg>
             </div>
             <p>Click to upload or drag and drop</p>
-            <input type="file" required id="upload-file" name="uploaded-file" webkitdirectory>
+            <input type="file" required id="upload-file" name="dosya">
             <p class="message">No Files Selected</p>
           </div>
           <div class="dropzone-actions">
