@@ -123,26 +123,4 @@ dropzoneBox.addEventListener("reset", (e) => {
 });
 
 // Kaydet butonuna tıklanınca tetiklenecek olan fonksiyon
-document.querySelector('.dropzone-box').addEventListener("submit", (e) => {
-  e.preventDefault(); // Formun varsayılan davranışını engelle
-
-  const formData = new FormData();
-  const files = document.getElementById("upload-file").files;
-
-  for (let i = 0; i < files.length; i++) {
-    formData.append("file[]", files[i]);
-  }
-
-  fetch('upload.php', {
-    method: 'POST',
-    body: formData
-  })
-  .then(response => response.text())
-  .then(data => {
-    console.log(data); // PHP tarafından dönen veriyi konsola yazdır
-  })
-  .catch(error => {
-    console.error(error);
-  });
-});
 
