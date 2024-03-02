@@ -123,4 +123,3 @@ dropzoneBox.addEventListener("reset", (e) => {
 });
 
 // Kaydet butonuna tıklanınca tetiklenecek olan fonksiyon
-
