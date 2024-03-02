@@ -12,9 +12,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body style="background-color: #333;">
@@ -363,7 +365,7 @@
           Click to add your project
         </p>
         <button id="addFileCard">
-          Explore Benefits
+          Add Site
         </button>
       </div>
       <div class="expand-btn" style="display: none;">
@@ -396,12 +398,12 @@
       <h1 style="font-size: 1.2rem; padding: 15px 0 0 10px; color: white;">Dosya Yükleme Ekranı
       </h1>
       <button type="button" id="closeforms"><span class="material-symbols-outlined">close</span></button>
-      <div class="dropzone-sol">
-        <form name="yukleme" class="dropzone-box" action="upload.php" method="post" enctype="multipart/form-data">
+    </div>
+    <div class="dropzone-orta">
+      <form name="yukleme" class="dropzone-box" action="upload.php" method="post" enctype="multipart/form-data">
+        <div class="dropzone-sol">
           <h2>Upload and attach files</h2>
-          <p>
-            Attach files to this project
-          </p>
+          <p>Attach files to this project</p>
           <div class="dropzone-area">
             <div class="file-upload-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
@@ -417,15 +419,74 @@
           </div>
           <div class="dropzone-actions">
             <button type="reset" id="channeluploadButton">
-                Cancel
+              Cancel
             </button>
             <button id="submit-button" type="submit">
-                Save
+              Save
             </button>
+          </div>
         </div>
-        </form>
-      </div>
+        <div class="dropzone-sag scrollable">
+          <!-- ////////////////////////////////////////////////////////////////
+          ////////////////////////////////////////////////////////////////////// -->
+          <div class="radiogroup">
+            <h3 class="radiogroup_h">What is this?</h3>
+            <div class="wrapper">
+              <input class="state" type="radio" name="app" id="a" value="a">
+              <label class="label" for="a">
+                <div class="indicator"></div>
+                <span class="text">Button</span>
+              </label>
+            </div>
+            <div class="wrapper">
+              <input class="state" type="radio" name="app" id="b" value="b">
+              <label class="label" for="b">
+                <div class="indicator"></div>
+                <span class="text">Card</span>
+              </label>
+            </div>
+            <div class="wrapper">
+              <input class="state" type="radio" name="app" id="c" value="c">
+              <label class="label" for="c">
+                <div class="indicator"></div>
+                <span class="text">Accordion</span>
+              </label>
+            </div>
+            <div class="wrapper">
+              <input class="state" type="radio" name="app" id="d" value="d">
+              <label class="label" for="d">
+                <div class="indicator"></div>
+                <span class="text">Animation</span>
+              </label>
+            </div>
+            <div class="wrapper">
+              <input class="state" type="radio" name="app" id="e" value="e">
+              <label class="label" for="e">
+                <div class="indicator"></div>
+                <span class="text">Dropdown</span>
+              </label>
+            </div>
+            <div class="wrapper">
+              <input class="state" type="radio" name="app" id="f" value="f">
+              <label class="label" for="f">
+                <div class="indicator"></div>
+                <span class="text">Footer</span>
+              </label>
+            </div>
+          </div>
+          <!-- //////////////////////////////////////////////////////////////
+          /////////////////////////////////////////////////////////////////// -->
+          <div class="input-container" id="input-container">
+            <input type="text" name="filenameID" placeholder="Dosyanız klasöre hangi isimle kaydedilsin?">
+          </div>
+          <div class="input-container" id="input-container2">
+            <input type="text" id="openPageFileName" name="openPageFileName"
+              placeholder="Sayfa açıldığında ne açılacak?(codes/index.html)">
+          </div>
+        </div>
+      </form>
     </div>
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////// -->
   </div>
   <script src="script.js"></script>
 </body>
