@@ -49,7 +49,7 @@ html {
 }
 
 .scrollable {
-  max-height: 30rem; /* veya istediğiniz bir değer */
+  max-height: 36rem; /* veya istediğiniz bir değer */
   overflow-y: auto;
 }
 .navdiv {
@@ -474,7 +474,7 @@ li:last-child > .line-vertical {
 /*********************************************************************************/
 .positionMiddleDiv{
   width: 70%;
-  height: 600px;
+  height: 680px;
   margin-left: 12.5%;
   margin-top: 20vh;
   z-index: 5;
@@ -485,6 +485,7 @@ li:last-child > .line-vertical {
   border: 2px solid black;
   border-radius: 6px;
   display: block;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .positionMiddleDiv_header{
   width: 100%;
@@ -494,10 +495,11 @@ li:last-child > .line-vertical {
 #closeforms{
   padding: 7px;
   border-radius: 50%;
-  color: black;
-  border: 2px solid #FFB0B0;
+  color: white;
+  border: 2px solid #0C2D57;
   float: right;
   margin-top: -34px;
+  background: transparent;
   margin-right: 10px;
 }
 /**************************************************************************************/
@@ -511,7 +513,6 @@ li:last-child > .line-vertical {
 .dropzone-sol{
   vertical-align: top;
   width: 47%;
-  margin-top: -.5rem;
   margin-left: .7rem;
   margin-right: .7rem;
   display: inline-block;
@@ -520,11 +521,11 @@ li:last-child > .line-vertical {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 1rem;
   background-color: var(--white);
+  height: 34rem;
 }
 .dropzone-sag{
   vertical-align: top;
   width: 47%;
-  margin-top: -.5rem;
   margin-left: .7rem;
   margin-right: .7rem;
   display: inline-block;
@@ -533,7 +534,7 @@ li:last-child > .line-vertical {
   border-radius: 1rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: var(--white);
-  height: 29rem;
+  height: 34rem;
 }
 
 /* //////////////////////////////////////////////////////// */
@@ -543,7 +544,8 @@ li:last-child > .line-vertical {
   padding: 1rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   width: 100%;
-  background-color: #FFF7F1;
+  background-color: #0C2D57;
+  height: 36rem;
 }
 
 .dropzone-box h2 {
