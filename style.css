@@ -480,8 +480,8 @@ li:last-child > .line-vertical {
   z-index: 5;
   position: absolute;
   background-color: #0C2D57;
-  opacity: 1;
-  pointer-events: all;
+  opacity: 0;
+  pointer-events: none;
   border: 2px solid black;
   border-radius: 6px;
   display: block;
