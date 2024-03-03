@@ -51,7 +51,7 @@ document.getElementById("closeforms").addEventListener("click", function () {
 /*////////////////////////////////////////////////////////////////////////////////*/
 document.getElementById("addFileCard").addEventListener("click", function () {
   // document.getElementById("positionMiddleDiv").classList.add("animate__animated animate__bounceIn");
-  document.getElementById("positionMiddleDiv").style = "opacity: 90%; pointer-events:all;";
+  document.getElementById("positionMiddleDiv").style = "opacity: 1; pointer-events:all;";
 });
 /*////////////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////////////*/
