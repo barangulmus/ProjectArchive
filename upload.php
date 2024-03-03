@@ -1,6 +1,7 @@
 <?php
 $upload_dir = "upload/";
 $archive_dir = "archive/";
+$zip_dir = "downloadFolder/";
 var_dump($_POST);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -60,10 +61,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $zip->extractTo($extract_dir);
                 $zip->close();
 
+                // Zip dosyasını zip klasörüne kopyala
+                $zip_file = $zip_dir . basename($uploaded_file);
+                copy($uploaded_file, $zip_file);
+
                 // Zip dosyasını silebilirsiniz
                 unlink($uploaded_file);
 
-                echo 'Dosya başarıyla açıldı ve içeriği "'.$extract_dir.'" klasörüne çıkarıldı. Dosya "'.$uploaded_file.'" klasörüne kaydedildi.';
+                echo 'Dosya başarıyla açıldı ve içeriği "'.$extract_dir.'" klasörüne çıkarıldı. Dosya "'.$zip_file.'" klasörüne kaydedildi.';
             } else {
                 echo 'Dosya açılırken hata oluştu.';
             }
